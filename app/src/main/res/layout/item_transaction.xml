@@ -41,7 +41,7 @@
                 android:maxLines="2"
                 android:textAppearance="?attr/textAppearanceListItem"
                 android:textSize="@dimen/sp17"
-                tools:text="Send ETH" />
+                tools:text="Received Chain" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -73,19 +73,19 @@
             android:layout_centerVertical="true"
             android:textColor="@color/black"
             android:textSize="17sp"
-            tools:text="+ 673.345 ETH" />
+            tools:text="+ 70,000,000,000.3455 ETH" />
 
         <TextView
             android:id="@+id/supplimental"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/address"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_toStartOf="@id/text_tx_time"
             android:fontFamily="@font/font_regular"
             android:maxLines="1"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:layout_marginEnd="2dp"
-            android:layout_marginStart="2dp"
             android:textSize="12sp"
             android:visibility="visible"
             tools:text="+1.0 ETH" />
