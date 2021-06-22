@@ -105,7 +105,7 @@
     <string name="error_fail_load_tokens">Failed to load tokens list</string>
     <string name="error_create_wallet">Failed to create a wallet</string>
 
-    <string name="app_name">AlphaWallet</string>
+    <string name="app_name">Equation</string>
     <string name="all">All</string>
     <string name="currency">Currencies</string>
     <string name="advanced">Advanced Options</string>
@@ -129,7 +129,8 @@
     <string name="select_tickets">Select %1$s to Sell:</string>
     <string name="select_tickets_redeem">Select Tickets to Redeem:</string>show
     <string name="action_purchase">Purchase</string>
-    <string name="toolbar_header_wallet">Wallet</string>
+    <string name="toolbar_header_wallet">UPC Collector</string>
+    <string name="menu_scan_upc">Scan UPC</string>
     <string name="toolbar_header_settings">Settings</string>
     <string name="toolbar_header_help">Help \u0026 FAQ</string>
     <string name="toolbar_header_transactions">Transactions</string>
