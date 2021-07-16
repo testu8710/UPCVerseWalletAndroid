@@ -87,6 +87,11 @@ public class Utils {
     }
 
     public static String formatUrl(String url) {
+        String match = url.substring(0,6);
+        String protocol = "upc://";
+        if( match.equals(protocol)) {
+            return url;
+        }
         if (URLUtil.isHttpsUrl(url) || URLUtil.isHttpUrl(url)) {
             return url;
         } else {

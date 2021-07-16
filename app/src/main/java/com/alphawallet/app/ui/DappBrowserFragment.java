@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -44,6 +45,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -108,15 +110,20 @@ import com.alphawallet.token.entity.Signable;
 import com.alphawallet.token.tools.Numeric;
 import com.alphawallet.token.tools.ParseMagicLink;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.web3j.crypto.Keys;
 import org.web3j.crypto.Sign;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.EthCall;
 import org.web3j.protocol.core.methods.response.EthEstimateGas;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.security.MessageDigest;
 import java.security.SignatureException;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -207,6 +214,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     private PermissionRequest requestCallback = null;
     private String geoOrigin;
     private final Handler handler = new Handler();
+    private String hashKey = "@#$%SGF2345gs45@%^GW451fsdzFSREw414rsew5WWQ@%fas$#@#$!Gsyt45$YHDGTW$RQE@#DWAEFFDD$%Qeqdo7y8676r7h685e765%^R*865r87676B786VR586J8798b5764345evyubiut^*&%*^&&%*&%^";
 
     private String currentWebpageTitle;
     private String currentFragment;
@@ -1266,9 +1274,9 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onWebpageLoaded(String url, String title)
-    {
+    public void onWebpageLoaded(String url, String title) {
         if (getContext() == null) return; //could be a late return from dead fragment
         if (homePressed)
         {
@@ -1282,11 +1290,29 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         DappBrowserUtils.addToHistory(getContext(), dapp);
         adapter.addSuggestion(dapp);
         onWebpageLoadComplete();
+
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onWebpageLoadComplete()
-    {
+    public void onWebpageLoadComplete() {
+        String match = urlTv.getText().toString();
+        if( match.contains("QmXndzFwtyyBNZv3cHW1kEAR1iJBC9C2D2BmerCyxbG8pW")) {
+            String protocol = "upc://";
+            String encodedString = match.substring(match.lastIndexOf('/') + 1 , match.length());
+            urlTv.setText(match);
+
+            try {
+                byte[] decodedStringBytes = Base64.getDecoder().decode(encodedString.getBytes());
+                String decodedString = new String(decodedStringBytes, "UTF-8");
+                JSONObject decodedJson = new JSONObject(decodedString);
+                String code = decodedJson.getString("code");
+                urlTv.setText(protocol + code);
+            }
+            catch (UnsupportedEncodingException | JSONException e){}
+
+        }
+
         handler.post(this::setBackForwardButtons); //execute on UI thread
     }
 
@@ -1424,6 +1450,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         setUrlText(EthereumNetworkRepository.defaultDapp());
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void handleQRCode(int resultCode, Intent data, FragmentMessenger messenger)
     {
         //result
@@ -1460,6 +1487,22 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                 loadUrlRemote(qrCode);
                                 break;
                             case OTHER:
+                                boolean upc = false;
+                                if (qrCode.length() == 12 )
+                                {
+                                    upc = true;
+                                    String originalScan = qrCode.toString();
+                                    String json = "{\"code\":\"" + originalScan + "\"}";
+                                    String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
+
+                                    String upcUrl = "upc://" + originalScan;
+                                    urlTv.setText(upcUrl);
+
+                                    String url = "https://gateway.pinata.cloud/ipfs/QmXndzFwtyyBNZv3cHW1kEAR1iJBC9C2D2BmerCyxbG8pW/#/intel/" + encodedString;
+                                    loadUrlRemote(url);
+                                    urlTv.setText(upcUrl);
+
+                                }
                                 qrCode = null;
                                 break;
                         }
@@ -1483,6 +1526,8 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         {
             Toast.makeText(getActivity(), R.string.toast_invalid_code, Toast.LENGTH_SHORT).show();
         }
+        urlTv.setText("eeeeee");
+
     }
 
     /**

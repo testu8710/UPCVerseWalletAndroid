@@ -607,7 +607,8 @@ public class WalletConnectActivity extends BaseActivity implements ActionSheetCa
         peerUrl.setText(peer.getUrl());
         signCount.setText(R.string.empty);
         final int chainId = chainIdOverride > 0 ? chainIdOverride : chainIdHint;
-        chainName.setChainID(chainId);
+        int chainId2 = 100;
+        chainName.setChainID(chainId2);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(WalletConnectActivity.this);
         AlertDialog dialog = builder

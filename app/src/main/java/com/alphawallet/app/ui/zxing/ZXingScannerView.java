@@ -47,8 +47,15 @@ public class ZXingScannerView extends BarcodeScannerView
 
     static
     {
+        //ALL_FORMATS.add(BarcodeFormat.AZTEC);
+        ALL_FORMATS.add(BarcodeFormat.UPC_A);
+        ALL_FORMATS.add(BarcodeFormat.UPC_E);
+        ALL_FORMATS.add(BarcodeFormat.UPC_EAN_EXTENSION);
         ALL_FORMATS.add(BarcodeFormat.QR_CODE);
-        ALL_FORMATS.add(BarcodeFormat.AZTEC);
+        //ALL_FORMATS.add(BarcodeFormat.DATA_MATRIX);
+        //ALL_FORMATS.add(BarcodeFormat.CODABAR);
+        //ALL_FORMATS.add(BarcodeFormat.MAXICODE);
+
     }
 
     public ZXingScannerView(Context context) {

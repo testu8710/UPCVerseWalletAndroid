@@ -20,7 +20,9 @@ import com.alphawallet.app.ui.widget.OnQRCodeScannedListener;
 import com.alphawallet.app.util.QRParser;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
+import com.mixpanel.android.util.StringUtils;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -140,7 +142,9 @@ public class FullScannerFragment extends Fragment implements ZXingScannerView.Re
 
             if (qrResult.type == OTHER)
             {
-                pass = false;
+                //pass = false;
+                pass = true;
+
             }
         }
         catch (Exception e)
