@@ -109,6 +109,8 @@ import com.alphawallet.token.entity.SignMessageType;
 import com.alphawallet.token.entity.Signable;
 import com.alphawallet.token.tools.Numeric;
 import com.alphawallet.token.tools.ParseMagicLink;
+import com.google.android.gms.common.util.NumberUtils;
+import com.mixpanel.android.util.StringUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -193,6 +195,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     private DappBrowserSuggestionsAdapter adapter;
     private String loadOnInit;
     private boolean homePressed;
+    private boolean isOnTextChanged = false;
 
     private final Fragment myDappsFragment;
     private final Fragment discoverDappsFragment;
@@ -453,6 +456,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
             return true;
         });
         if (scan != null) scan.setOnMenuItemClickListener(menuItem -> {
+            backPressed();
             viewModel.startScan(getActivity());
             return true;
         });
@@ -593,19 +597,38 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         });
 
         urlTv.addTextChangedListener(new TextWatcher() {
+            String textBefore = "";
+            private boolean doLoad = false;
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                textBefore = charSequence.toString();
             }
 
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                if(charSequence.toString().contains("ipfs")) {
+                    doLoad = false;
+                }
+                else if( !textBefore.contains("ipfs") && charSequence.length() == 18 && charSequence.toString().toString() != textBefore ) {
+                    String autoUrl = resolveUpcUrl(charSequence.toString());
+                    refresh.setEnabled(false);
+                    web3.reload();
+                    reloadPage();
+                    loadUrl(autoUrl);
+                    detachFragments();
+                    textBefore = "####fillmein###!@!#!@#";
+                }
             }
 
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void afterTextChanged(Editable editable) {
+                String editText = editable.toString();
                 adapter.setHighlighted(editable.toString());
+                if(editText.contains("upc://") && editText.length() == 18) {
+                    reloadPage();
+                }
             }
         });
     }
@@ -820,7 +843,8 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
 
             @Override
             public void onPermissionRequest(final PermissionRequest request) {
-                requestCameraPermission(request);
+                request.grant(request.getResources());
+                //requestCameraPermission(request);
             }
 
             @Override
@@ -1294,10 +1318,21 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
+    private String resolveUpcUrl(String fullUpcUrl) {
+
+        String upc = fullUpcUrl.substring(fullUpcUrl.lastIndexOf('/') + 1 , fullUpcUrl.length());
+        String json = "{\"code\":\"" + upc + "\"}";
+
+        String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
+        String url = "https://ipfs.io/ipfs/QmNRiMt4mc3hcZV5oasTDDEA35QTN2BTmA3bLcCogpxC26/#/intel/" + encodedString;
+        return url;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onWebpageLoadComplete() {
         String match = urlTv.getText().toString();
-        if( match.contains("QmXndzFwtyyBNZv3cHW1kEAR1iJBC9C2D2BmerCyxbG8pW")) {
+        if( match.contains("ipfs")) {
             String protocol = "upc://";
             String encodedString = match.substring(match.lastIndexOf('/') + 1 , match.length());
             urlTv.setText(match);
@@ -1355,8 +1390,17 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private boolean loadUrl(String urlText)
     {
+
+        String match = urlText.substring(0,6);
+        String protocol = "upc://";
+        String upcUrl;
+        if( match.equals(protocol)) {
+            upcUrl = resolveUpcUrl(urlText);
+            urlText = upcUrl;
+        }
         detachFragments();
         addToBackStack(DAPP_BROWSER);
         cancelSearchSession();
@@ -1498,9 +1542,10 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = "upc://" + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://gateway.pinata.cloud/ipfs/QmXndzFwtyyBNZv3cHW1kEAR1iJBC9C2D2BmerCyxbG8pW/#/intel/" + encodedString;
-                                    loadUrlRemote(url);
+                                    String url = "https://ipfs.io/ipfs/QmNRiMt4mc3hcZV5oasTDDEA35QTN2BTmA3bLcCogpxC26/#/intel/" + encodedString;
+                                    backPressed();
                                     urlTv.setText(upcUrl);
+                                    loadUrlRemote(url);
 
                                 }
                                 qrCode = null;
@@ -1526,8 +1571,6 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         {
             Toast.makeText(getActivity(), R.string.toast_invalid_code, Toast.LENGTH_SHORT).show();
         }
-        urlTv.setText("eeeeee");
-
     }
 
     /**
