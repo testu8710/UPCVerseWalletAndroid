@@ -4,6 +4,7 @@ import android.Manifest;
 import android.animation.Animator;
 import android.animation.LayoutTransition;
 import android.animation.ValueAnimator;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
@@ -456,7 +457,6 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
             return true;
         });
         if (scan != null) scan.setOnMenuItemClickListener(menuItem -> {
-            backPressed();
             viewModel.startScan(getActivity());
             return true;
         });
@@ -841,11 +841,24 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                 currentWebpageTitle = title;
             }
 
+
+
+
             @Override
             public void onPermissionRequest(final PermissionRequest request) {
-                request.grant(request.getResources());
-                //requestCameraPermission(request);
+                Log.d(TAG, "onPermissionRequest");
+                getActivity().runOnUiThread(new Runnable() {
+                    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+                    @Override
+                    public void run() {
+                        String[] perms = request.getResources();
+                        request.grant(perms);
+                    }
+                });
             }
+
+
+
 
             @Override
             public void onGeolocationPermissionsShowPrompt(String origin,
@@ -1324,7 +1337,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String json = "{\"code\":\"" + upc + "\"}";
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
-        String url = "https://ipfs.io/ipfs/QmNRiMt4mc3hcZV5oasTDDEA35QTN2BTmA3bLcCogpxC26/#/intel/" + encodedString;
+        String url = "https://ipfs.io/ipfs/QmauXVqwuyMvVCDqt6N3sfHoMzzPVqwyKzaZ6D3vaH59zX/#/intel/" + encodedString;
         return url;
     }
 
@@ -1542,11 +1555,12 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = "upc://" + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmNRiMt4mc3hcZV5oasTDDEA35QTN2BTmA3bLcCogpxC26/#/intel/" + encodedString;
-                                    backPressed();
+                                    String url = "https://ipfs.io/ipfs/QmauXVqwuyMvVCDqt6N3sfHoMzzPVqwyKzaZ6D3vaH59zX/#/intel/" + encodedString;
                                     urlTv.setText(upcUrl);
-                                    loadUrlRemote(url);
-
+                                    refresh.setEnabled(false);
+                                    web3.reload();
+                                    reloadPage();
+                                    loadUrl(url);
                                 }
                                 qrCode = null;
                                 break;
