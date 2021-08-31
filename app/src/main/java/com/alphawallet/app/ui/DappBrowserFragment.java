@@ -55,6 +55,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.alphawallet.app.BuildConfig;
 import com.alphawallet.app.C;
 import com.alphawallet.app.R;
+import com.alphawallet.app.contracts.UPCNFT;
 import com.alphawallet.app.entity.CryptoFunctions;
 import com.alphawallet.app.entity.CustomViewSettings;
 import com.alphawallet.app.entity.DApp;
@@ -1337,7 +1338,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String json = "{\"code\":\"" + upc + "\"}";
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
-        String url = "https://ipfs.io/ipfs/QmauXVqwuyMvVCDqt6N3sfHoMzzPVqwyKzaZ6D3vaH59zX/#/intel/" + encodedString;
+        String url = "https://ipfs.io/ipfs/QmV76mXiQKFHHTYD1LknbPXZ2N2PBcKGGNuqVhWecbnr3o/#/intel/" + encodedString;
         return url;
     }
 
@@ -1408,12 +1409,22 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     {
 
         String match = urlText.substring(0,6);
+        String matchSearch = urlText.substring(0,7);
         String protocol = "upc://";
+        String searchProtocol = "upcs://";
         String upcUrl;
         if( match.equals(protocol)) {
             upcUrl = resolveUpcUrl(urlText);
             urlText = upcUrl;
         }
+/*
+        if( match.equals(searchProtocol)) {
+            UPCNFT nftLookup;
+            nftLookup.upcHashToDomain()
+            upcUrl = resolveUpcUrl(urlText);
+            urlText = upcUrl;
+        }
+*/
         detachFragments();
         addToBackStack(DAPP_BROWSER);
         cancelSearchSession();
@@ -1555,7 +1566,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = "upc://" + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmauXVqwuyMvVCDqt6N3sfHoMzzPVqwyKzaZ6D3vaH59zX/#/intel/" + encodedString;
+                                    String url = "https://ipfs.io/ipfs/QmV76mXiQKFHHTYD1LknbPXZ2N2PBcKGGNuqVhWecbnr3o/#/intel/" + encodedString;
                                     urlTv.setText(upcUrl);
                                     refresh.setEnabled(false);
                                     web3.reload();
