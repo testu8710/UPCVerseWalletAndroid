@@ -64,11 +64,11 @@ import static com.alphawallet.ethereum.EthereumNetworkBase.ROPSTEN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.SOKOL_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.XDAI_ID;
 
-public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryType
+public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryType 
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://ipfs.io/ipfs/QmV76mXiQKFHHTYD1LknbPXZ2N2PBcKGGNuqVhWecbnr3o/#/intel/eyJjb2RlIjoiMDEyNTg3NzA0NDAwIn0=";
+    private static final String DEFAULT_HOMEPAGE = "https://ipfs.io/ipfs/QmWVJgMvWrjXR3csPoaTDgmTr9cK53s7hQJSz5DXNHqi8c/#/intel/eyJjb2RlIjoiMDEyNTg3NzA0NDAwIn0=";
     /* constructing URLs from BuildConfig. In the below area you will see hardcoded key like da3717...
        These hardcoded keys are fallbacks used by AlphaWallet forks.
 

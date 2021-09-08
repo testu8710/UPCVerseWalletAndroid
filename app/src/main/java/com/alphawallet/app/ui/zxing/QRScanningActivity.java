@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.OnLifecycleEvent;
@@ -30,6 +32,7 @@ import com.google.zxing.Result;
 import com.google.zxing.common.HybridBinarizer;
 
 import java.lang.ref.SoftReference;
+import java.util.Base64;
 import java.util.Objects;
 
 import io.reactivex.Single;
@@ -195,13 +198,23 @@ public class QRScanningActivity extends BaseActivity implements OnQRCodeScannedL
         handleQRCode(result);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void handleQRCode(String qrCode)
     {
         if (qrCode.startsWith("wc:")) {
             startWalletConnect(qrCode);
         } else {
             Intent intent = new Intent();
-            intent.putExtra(C.EXTRA_QR_CODE, qrCode);
+
+            String originalScan = qrCode.toString();
+            String json = "{\"code\":\"" + originalScan + "\"}";
+            String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
+
+
+            String url = "https://ipfs.io/ipfs/QmWVJgMvWrjXR3csPoaTDgmTr9cK53s7hQJSz5DXNHqi8c/#/intel/" + encodedString;
+
+
+            intent.putExtra(C.EXTRA_QR_CODE, url);
             setResult(Activity.RESULT_OK, intent);
             finish();
         }

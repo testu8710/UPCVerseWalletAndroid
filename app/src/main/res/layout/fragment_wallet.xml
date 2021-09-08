@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTheme"
+    android:background="@color/binance_main"
     android:orientation="vertical">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -19,7 +19,9 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleEnabled="false">
 
-            <include layout="@layout/layout_simple_toolbar_no_divider" />
+            <include
+                layout="@layout/layout_simple_toolbar_no_divider"
+                android:background="@color/alabaster" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -29,9 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:background="@drawable/background_tab_layout"
-            android:paddingStart="12dp"
+            android:background="@color/alabaster"
             app:layout_scrollFlags="enterAlways"
+            app:tabBackground="@color/alabaster"
             app:tabGravity="center"
             app:tabIndicatorColor="@color/colorHighlight"
             app:tabIndicatorFullWidth="true"
@@ -49,7 +51,7 @@
             android:id="@+id/notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_bottom_border" />
+            android:background="@color/azure_hover" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -64,7 +66,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@color/binance_test" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

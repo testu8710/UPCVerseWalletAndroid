@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/layout_manage_tokens"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_manage_tokens"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:background="@drawable/background_divider_top_bottom"
+    android:background="@color/binance_main"
     android:gravity="end"
     android:orientation="horizontal"
-    android:paddingEnd="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:paddingEnd="0dp">
 
     <TextView
         android:id="@+id/text_add_hide_tokens"

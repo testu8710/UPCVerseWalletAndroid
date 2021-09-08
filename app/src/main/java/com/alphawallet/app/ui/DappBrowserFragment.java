@@ -173,6 +173,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
 
     private ActionSheetDialog confirmationDialog;
 
+    public String scan_protocol = "thankyou://";
     private static final int UPLOAD_FILE = 1;
     public static final int REQUEST_FILE_ACCESS = 31;
     public static final int REQUEST_FINE_LOCATION = 110;
@@ -627,7 +628,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
             public void afterTextChanged(Editable editable) {
                 String editText = editable.toString();
                 adapter.setHighlighted(editable.toString());
-                if(editText.contains("upc://") && editText.length() == 18) {
+                if(editText.contains(scan_protocol) && editText.length() == (scan_protocol.length() + 12) ) {
                     reloadPage();
                 }
             }
@@ -1338,7 +1339,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String json = "{\"code\":\"" + upc + "\"}";
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
-        String url = "https://ipfs.io/ipfs/QmV76mXiQKFHHTYD1LknbPXZ2N2PBcKGGNuqVhWecbnr3o/#/intel/" + encodedString;
+        String url = "https://ipfs.io/ipfs/QmWVJgMvWrjXR3csPoaTDgmTr9cK53s7hQJSz5DXNHqi8c/#/intel/" + encodedString;
         return url;
     }
 
@@ -1347,7 +1348,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     public void onWebpageLoadComplete() {
         String match = urlTv.getText().toString();
         if( match.contains("ipfs")) {
-            String protocol = "upc://";
+            String protocol = scan_protocol;
             String encodedString = match.substring(match.lastIndexOf('/') + 1 , match.length());
             urlTv.setText(match);
 
@@ -1408,9 +1409,10 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
     private boolean loadUrl(String urlText)
     {
 
-        String match = urlText.substring(0,6);
-        String matchSearch = urlText.substring(0,7);
-        String protocol = "upc://";
+        int scan_protocol_len = scan_protocol.length();
+        String match = urlText.substring(0,scan_protocol_len-1);
+        String matchSearch = urlText.substring(0,scan_protocol_len + 1);
+        String protocol = scan_protocol;
         String searchProtocol = "upcs://";
         String upcUrl;
         if( match.equals(protocol)) {
@@ -1556,17 +1558,17 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                 break;
                             case OTHER:
                                 boolean upc = false;
-                                if (qrCode.length() == 12 )
+                                if (qrCode.length() >= 12 )
                                 {
                                     upc = true;
                                     String originalScan = qrCode.toString();
                                     String json = "{\"code\":\"" + originalScan + "\"}";
                                     String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
 
-                                    String upcUrl = "upc://" + originalScan;
+                                    String upcUrl = scan_protocol + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmV76mXiQKFHHTYD1LknbPXZ2N2PBcKGGNuqVhWecbnr3o/#/intel/" + encodedString;
+                                    String url = "https://ipfs.io/ipfs/QmWVJgMvWrjXR3csPoaTDgmTr9cK53s7hQJSz5DXNHqi8c/#/intel/" + encodedString;
                                     urlTv.setText(upcUrl);
                                     refresh.setEnabled(false);
                                     web3.reload();
