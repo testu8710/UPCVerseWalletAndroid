@@ -68,7 +68,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://ipfs.io/ipfs/QmWVJgMvWrjXR3csPoaTDgmTr9cK53s7hQJSz5DXNHqi8c/#/intel/eyJjb2RlIjoiMDEyNTg3NzA0NDAwIn0=";
+    private static final String DEFAULT_HOMEPAGE = "https://ipfs.io/ipfs/QmVA9MZPb57qEtV45afodpjnUzJHLGVvmLMXRyMPeA9itR/";
     /* constructing URLs from BuildConfig. In the below area you will see hardcoded key like da3717...
        These hardcoded keys are fallbacks used by AlphaWallet forks.
 

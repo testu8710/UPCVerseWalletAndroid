@@ -56,7 +56,7 @@
             style="@style/QRScannerTextView"
             android:drawableTop="@drawable/ic_browse"
             android:text="@string/browse"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </LinearLayout>
 

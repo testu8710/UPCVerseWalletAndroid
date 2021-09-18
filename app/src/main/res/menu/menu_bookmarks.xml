@@ -4,17 +4,18 @@
 
     <group android:id="@+id/dapp_browser_menu">
 
+
         <item
-            android:id="@+id/action_scan_upc"
-            android:icon="@drawable/ic_plus"
+            android:id="@+id/action_scan"
+            android:icon="@drawable/ic_camera_scan"
             android:orderInCategory="15"
-            android:title="@string/menu_scan_upc"
+            android:title="@string/action_scan_dapp"
             app:showAsAction="withText" />
 
         <item
             android:id="@+id/action_add_to_my_dapps"
             android:icon="@drawable/ic_plus"
-            android:orderInCategory="15"
+            android:orderInCategory="22"
             android:title="@string/add_to_my_dapps"
             app:showAsAction="withText" />
 
@@ -39,12 +40,6 @@
             android:title="@string/action_share"
             app:showAsAction="withText" />
 
-        <item
-            android:id="@+id/action_scan"
-            android:icon="@drawable/ic_camera_scan"
-            android:orderInCategory="22"
-            android:title="@string/action_scan_dapp"
-            app:showAsAction="withText" />
 
         <item
             android:id="@+id/action_history"

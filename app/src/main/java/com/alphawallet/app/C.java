@@ -213,7 +213,7 @@ public abstract class C {
         DEFAULT, PENDING, INCOMPLETE
     }
 
-    public static final String INTERNET_SEARCH_PREFIX = "https://duckduckgo.com/?q=";
+    public static final String INTERNET_SEARCH_PREFIX = "https://gateway.pinata.cloud/ipfs/QmVA9MZPb57qEtV45afodpjnUzJHLGVvmLMXRyMPeA9itR/index.html&";
     public static final String HTTPS_PREFIX = "https://";
 
     // Settings Badge Keys
