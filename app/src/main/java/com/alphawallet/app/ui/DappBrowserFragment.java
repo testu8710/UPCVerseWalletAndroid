@@ -261,6 +261,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -285,8 +286,19 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                 lastUrl = savedInstanceState.getString(CURRENT_URL, "");
             }
 
+            String originalScan = "777777777777";
+            String json = "{\"code\":\"" + originalScan + "\"}";
+            String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
+
+            String upcUrl = scan_protocol + originalScan;
+            //urlTv.setText(upcUrl);
+
+            String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+
             attachFragment(DAPP_BROWSER);
-            loadOnInit = TextUtils.isEmpty(lastUrl) ? EthereumNetworkRepository.defaultDapp() : lastUrl;
+            //loadOnInit = url;
+            //loadOnInit = TextUtils.isEmpty(lastUrl) ? EthereumNetworkRepository.defaultDapp() : lastUrl;
+            loadOnInit = TextUtils.isEmpty(lastUrl) ? url : url;
         }
 
         return view;
@@ -370,6 +382,22 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         detachFragment(DISCOVER_DAPPS);
         detachFragment(HISTORY);
         detachFragment(SEARCH);
+    }
+
+    public void homePressed2()
+    {
+        homePressed = true;
+        detachFragments();
+        currentFragment = DAPP_BROWSER;
+        if (urlTv != null)
+            urlTv.getText().clear();
+        if (web3 != null)
+        {
+            resetDappBrowser();
+        }
+
+        //blank forward / backward arrows
+        setBackForwardButtons();
     }
 
     public void homePressed()
@@ -1350,7 +1378,9 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String json = "{\"code\":\"" + upc + "\"}";
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
-        String url = "https://ipfs.io/ipfs/QmSkSymp3rnKXxo6LCJYi7ATELXDaa9TXSwT12sfVAE1gU/#/intel/" + encodedString;
+        String lastUrl = PreferenceManager.getDefaultSharedPreferences(getContext()).getString(CURRENT_URL, "");
+        String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+        loadOnInit = TextUtils.isEmpty(lastUrl) ? url : url;
         return url;
     }
 
@@ -1523,12 +1553,26 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         }
     }
 
+    //jonger from home press
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void resetDappBrowser()
     {
         web3.clearHistory();
         web3.stopLoading();
-        web3.loadUrl(EthereumNetworkRepository.defaultDapp(), getWeb3Headers());
-        setUrlText(EthereumNetworkRepository.defaultDapp());
+
+        String originalScan = "777777777777";
+        String json = "{\"code\":\"" + originalScan + "\"}";
+        String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
+
+        String upcUrl = scan_protocol + originalScan;
+        urlTv.setText(upcUrl);
+
+        String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+
+
+
+        web3.loadUrl(url, getWeb3Headers());
+        setUrlText(url);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -1579,7 +1623,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = scan_protocol + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmSkSymp3rnKXxo6LCJYi7ATELXDaa9TXSwT12sfVAE1gU/#/intel/" + encodedString;
+                                    String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
                                     urlTv.setText(upcUrl);
                                     refresh.setEnabled(false);
                                     web3.reload();
