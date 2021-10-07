@@ -293,7 +293,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
             String upcUrl = scan_protocol + originalScan;
             //urlTv.setText(upcUrl);
 
-            String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+            String url = "https://ipfs.io/ipfs/QmTB9ebHEaCh93tmaw9qyELTV9RbMJcqfeVZDNSzJJ6ctX/#/intel/" + encodedString;
 
             attachFragment(DAPP_BROWSER);
             //loadOnInit = url;
@@ -1379,7 +1379,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
         String lastUrl = PreferenceManager.getDefaultSharedPreferences(getContext()).getString(CURRENT_URL, "");
-        String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+        String url = "https://ipfs.io/ipfs/QmTB9ebHEaCh93tmaw9qyELTV9RbMJcqfeVZDNSzJJ6ctX/#/intel/" + encodedString;
         loadOnInit = TextUtils.isEmpty(lastUrl) ? url : url;
         return url;
     }
@@ -1567,7 +1567,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String upcUrl = scan_protocol + originalScan;
         urlTv.setText(upcUrl);
 
-        String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+        String url = "https://ipfs.io/ipfs/QmTB9ebHEaCh93tmaw9qyELTV9RbMJcqfeVZDNSzJJ6ctX/#/intel/" + encodedString;
 
 
 
@@ -1623,7 +1623,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = scan_protocol + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmYkGMVEENJzq6uHVssgXeqgA9ChHyxwvM5fNtKRMtVvsS/#/intel/" + encodedString;
+                                    String url = "https://ipfs.io/ipfs/QmTB9ebHEaCh93tmaw9qyELTV9RbMJcqfeVZDNSzJJ6ctX/#/intel/" + encodedString;
                                     urlTv.setText(upcUrl);
                                     refresh.setEnabled(false);
                                     web3.reload();
