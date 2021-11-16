@@ -23,9 +23,12 @@ import com.alphawallet.app.entity.DApp;
 
 public class AddEditDappActivity extends BaseActivity {
     public static final String KEY_MODE = "mode";
+    public static final String CURRENT_UPCVERSE = "CURRENT_UPCVERSE";
     public static final String KEY_DAPP = "dapp";
     public static final int MODE_ADD = 0;
     public static final int MODE_EDIT = 1;
+    public static final int MODE_UPCVERSE = 2;
+
 
     private TextView title;
     private EditText name;
@@ -80,6 +83,17 @@ public class AddEditDappActivity extends BaseActivity {
                     dapp.setName(name.getEditableText().toString());
                     dapp.setUrl(url.getEditableText().toString());
                     add(dapp); });
+                break;
+            }
+            case MODE_UPCVERSE: {
+                title.setText(R.string.edit_dapp);
+                button.setText(R.string.action_save);
+                name.setText(dapp.getName());
+                url.setText(dapp.getUrl());
+                button.setOnClickListener(v -> {
+                    dapp.setName("CURRENT_UPCVERSE");
+                    dapp.setUrl(url.getEditableText().toString());
+                    save(dapp); });
                 break;
             }
             case MODE_EDIT: {

@@ -129,6 +129,7 @@ import java.security.MessageDigest;
 import java.security.SignatureException;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -293,7 +294,10 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
             String upcUrl = scan_protocol + originalScan;
             //urlTv.setText(upcUrl);
 
-            String url = "https://ipfs.io/ipfs/QmcNGStU7ymKn6dXVzHQ1mK5Li5GT5sb9GaKR394amS6dZ/#/intel/" + encodedString;
+            List<DApp> upcverseList = DappBrowserUtils.getCurrentUPCVerse(getContext());
+            String upcverseHash = upcverseList.get(0).getUrl();
+
+            String url = "https://upcunderground.mypinata.cloud/ipfs/" + upcverseHash + "/#/intel/" + encodedString;
 
             attachFragment(DAPP_BROWSER);
             //loadOnInit = url;
@@ -467,6 +471,7 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         final MenuItem reload = toolbar.getMenu().findItem(R.id.action_reload);
         final MenuItem share = toolbar.getMenu().findItem(R.id.action_share);
         final MenuItem scan = toolbar.getMenu().findItem(R.id.action_scan);
+        final MenuItem upcverse = toolbar.getMenu().findItem(R.id.action_set_upcverse);
         final MenuItem add = toolbar.getMenu().findItem(R.id.action_add_to_my_dapps);
         final MenuItem history = toolbar.getMenu().findItem(R.id.action_history);
         final MenuItem bookmarks = toolbar.getMenu().findItem(R.id.action_my_dapps);
@@ -488,6 +493,10 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         });
         if (scan != null) scan.setOnMenuItemClickListener(menuItem -> {
             viewModel.startScan(getActivity());
+            return true;
+        });
+        if (upcverse != null) upcverse.setOnMenuItemClickListener(menuItem -> {
+            viewModel.addToMyDapps(getContext(), "CURRENT_UPCVERSE", urlTv.getText().toString());
             return true;
         });
         if (add != null) add.setOnMenuItemClickListener(menuItem -> {
@@ -1379,7 +1388,15 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
 
         String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
         String lastUrl = PreferenceManager.getDefaultSharedPreferences(getContext()).getString(CURRENT_URL, "");
-        String url = "https://ipfs.io/ipfs/QmcNGStU7ymKn6dXVzHQ1mK5Li5GT5sb9GaKR394amS6dZ/#/intel/" + encodedString;
+
+
+
+
+        List<DApp> upcverseList = DappBrowserUtils.getCurrentUPCVerse(getContext());
+        String upcverseHash = upcverseList.get(0).getUrl();
+
+        String url = "https://upcunderground.mypinata.cloud/ipfs/" + upcverseHash + "/#/intel/" + encodedString;
+
         loadOnInit = TextUtils.isEmpty(lastUrl) ? url : url;
         return url;
     }
@@ -1567,9 +1584,10 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
         String upcUrl = scan_protocol + originalScan;
         urlTv.setText(upcUrl);
 
-        String url = "https://ipfs.io/ipfs/QmcNGStU7ymKn6dXVzHQ1mK5Li5GT5sb9GaKR394amS6dZ/#/intel/" + encodedString;
+        List<DApp> upcverseList = DappBrowserUtils.getCurrentUPCVerse(getContext());
+        String upcverseHash = upcverseList.get(0).getUrl();
 
-
+        String url = "https://upcunderground.mypinata.cloud/ipfs/" + upcverseHash + "/#/intel/" + encodedString;
 
         web3.loadUrl(url, getWeb3Headers());
     }
@@ -1622,7 +1640,11 @@ public class DappBrowserFragment extends Fragment implements OnSignTransactionLi
                                     String upcUrl = scan_protocol + originalScan;
                                     urlTv.setText(upcUrl);
 
-                                    String url = "https://ipfs.io/ipfs/QmcNGStU7ymKn6dXVzHQ1mK5Li5GT5sb9GaKR394amS6dZ/#/intel/" + encodedString;
+                                    List<DApp> upcverseList = DappBrowserUtils.getCurrentUPCVerse(getContext());
+                                    String upcverseHash = upcverseList.get(0).getUrl();
+
+                                    String url = "https://upcunderground.mypinata.cloud/ipfs/" + upcverseHash + "/#/intel/" + encodedString;
+
                                     urlTv.setText(upcUrl);
                                     refresh.setEnabled(false);
                                     web3.reload();

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import com.alphawallet.app.R;
+import com.alphawallet.app.ui.AddEditDappActivity;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -18,6 +19,8 @@ import com.alphawallet.app.entity.DApp;
 
 public class DappBrowserUtils {
     private static final String DAPPS_LIST_FILENAME = "dapps_list.json";
+    private static final String DEFAULT_DAPP_FILENAME = "default-dapp.json";
+
 
     public static void saveToPrefs(Context context, List<DApp> myDapps) {
         if (context != null)
@@ -58,6 +61,39 @@ public class DappBrowserUtils {
 
         return dapps;
     }
+
+
+    public static List<DApp> getCurrentUPCVerse(Context context) {
+        if (context == null) return new ArrayList<>();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+        String upcVerse = prefs.getString("my_dapps", "CURRENT_UPCVERSE");
+
+
+        List<DApp> currentUpcverseList;
+        List<DApp> finalList = new ArrayList<>();
+
+        if (upcVerse.isEmpty()) {
+            currentUpcverseList = new ArrayList<>();
+        } else {
+            currentUpcverseList = new Gson().fromJson(upcVerse, new TypeToken<ArrayList<DApp>>() {
+            }.getType());
+        }
+
+        for (int i=0; i<currentUpcverseList.size(); i++) {
+            DApp current = currentUpcverseList.get(i);
+            if(current.getName().equals("CURRENT_UPCVERSE")) {
+                finalList.add(current);
+            }
+        }
+
+        if(finalList.size() < 1) {
+            DApp defaultUPCVerse = new DApp("CURRENT_UPCVERSE","QmexWiTptwZXejUspiXN32AQtFdseNdztNgBE4J9VCSqg1");
+            finalList.add(defaultUPCVerse);
+        }
+        return finalList;
+    }
+
 
     public static List<DApp> getBrowserHistory(Context context) {
         if (context == null) return new ArrayList<>();

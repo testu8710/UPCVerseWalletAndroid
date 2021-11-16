@@ -211,7 +211,7 @@ public class QRScanningActivity extends BaseActivity implements OnQRCodeScannedL
             String encodedString = Base64.getEncoder().encodeToString(json.getBytes());
 
 
-            String url = "https://ipfs.io/ipfs/QmcNGStU7ymKn6dXVzHQ1mK5Li5GT5sb9GaKR394amS6dZ/#/intel/" + encodedString;
+            String url = "https://upcunderground.mypinata.cloud/ipfs/QmexWiTptwZXejUspiXN32AQtFdseNdztNgBE4J9VCSqg1/#/intel/" + encodedString;
 
 
             intent.putExtra(C.EXTRA_QR_CODE, url);

@@ -4,6 +4,12 @@
 
     <group android:id="@+id/dapp_browser_menu">
 
+        <item
+            android:id="@+id/action_set_upcverse"
+            android:icon="@drawable/ic_camera_scan"
+            android:orderInCategory="18"
+            android:title="@string/set_upcverse"
+            app:showAsAction="withText" />
 
         <item
             android:id="@+id/action_scan"

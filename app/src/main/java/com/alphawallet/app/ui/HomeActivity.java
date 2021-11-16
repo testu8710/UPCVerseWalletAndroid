@@ -468,7 +468,8 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
             {
                 if (getSelectedItem() == DAPP_BROWSER)
                 {
-                    ((DappBrowserFragment) dappBrowserFragment).homePressed();
+                    ((DappBrowserFragment) dappBrowserFragment).selected();
+                    //((DappBrowserFragment) dappBrowserFragment).homePressed();
                 }
                 else
                 {
