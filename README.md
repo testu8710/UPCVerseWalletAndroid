@@ -7,8 +7,8 @@
 
 # Parallel Universe Hashes:
 
-# QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
-# QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS    - Use case: Free speech using UPC codes for individuals who have been "cancelled".
+ * QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
+ * QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS    - Use case: Free speech using UPC codes for individuals who have been "cancelled".
 
 
 
