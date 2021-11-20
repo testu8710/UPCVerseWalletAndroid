@@ -73,7 +73,7 @@ public class DappBrowserUtils {
         List<DApp> currentUpcverseList;
         List<DApp> finalList = new ArrayList<>();
 
-        if (upcVerse.isEmpty()) {
+        if (upcVerse.equals("CURRENT_UPCVERSE")) {
             currentUpcverseList = new ArrayList<>();
         } else {
             currentUpcverseList = new Gson().fromJson(upcVerse, new TypeToken<ArrayList<DApp>>() {
@@ -88,7 +88,7 @@ public class DappBrowserUtils {
         }
 
         if(finalList.size() < 1) {
-            DApp defaultUPCVerse = new DApp("CURRENT_UPCVERSE","QmexWiTptwZXejUspiXN32AQtFdseNdztNgBE4J9VCSqg1");
+            DApp defaultUPCVerse = new DApp("CURRENT_UPCVERSE","QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5");
             finalList.add(defaultUPCVerse);
         }
         return finalList;

@@ -1,5 +1,20 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlphaWallet/alpha-wallet-android)
 
+
+
+
+# Para1:1els Wallet: Alpha Wallet tailored for UPC Codes (Thank you AlphaWallet!)
+
+# Parallel Universe Hashes:
+
+# QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
+# QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS    - Use case: Free speech using UPC codes for individuals who have been "cancelled".
+
+
+
+
+
+
 # AlphaWallet - Advanced, Open Source Ethereum Mobile Wallet & dApp Browser for Android
 
 [![Build Status](https://api.travis-ci.com/AlphaWallet/alpha-wallet-android.svg?branch=master)](https://api.travis-ci.com/AlphaWallet/alpha-wallet-android.svg?branch=master)

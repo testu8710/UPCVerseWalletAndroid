@@ -105,7 +105,7 @@
     <string name="error_fail_load_tokens">Failed to load tokens list</string>
     <string name="error_create_wallet">Failed to create a wallet</string>
 
-    <string name="app_name">Parallel UPCVerses</string>
+    <string name="app_name">Para1:1els</string>
     <string name="all">All</string>
     <string name="currency">Currencies</string>
     <string name="advanced">Advanced Options</string>
@@ -129,7 +129,7 @@
     <string name="select_tickets">Select %1$s to Sell:</string>
     <string name="select_tickets_redeem">Select Tickets to Redeem:</string>show
     <string name="action_purchase">Purchase</string>
-    <string name="toolbar_header_wallet">Parallel UPCVerses</string>
+    <string name="toolbar_header_wallet">Para1:1els</string>
     <string name="menu_scan_upc">Scan UPC</string>
     <string name="toolbar_header_settings">Settings</string>
     <string name="toolbar_header_help">Help \u0026 FAQ</string>
@@ -354,7 +354,7 @@
     <string name="explain_xml_override">Enable XML override will create a directory \'AlphaWallet\' in your phone storage. Token config files (XML) can be dropped into this directory which will override default or network Token configs.</string>
     <string name="ask_user_about_xml_override">Do you wish to enable Token config override directory?</string>
     <string name="label_contract">Contract</string>
-    <string name="toolbar_header_browser">UPCVerse Browser</string>
+    <string name="toolbar_header_browser">Para1:1elsBrowser</string>
     <string name="message_to_sign">Message</string>
     <string name="signer_address">Address</string>
     <string name="requester_url">Requester</string>
@@ -402,7 +402,7 @@
     <string name="you_will_receive">you will receive</string>
     <string name="dust_value"><![CDATA[~0.00]]></string>
     <string name="action_scan_dapp">ScanDeep</string>
-    <string name="set_upcverse">Set Parallel UPCVerse (IPFS endpoint)</string>
+    <string name="set_upcverse">Set Para1:1els Endpoint</string>
 
     <string name="toast_invalid_code">Invalid Scan Result</string>
     <string name="address_found">Ethereum Address</string>
@@ -536,7 +536,7 @@
     <string name="provide_authentication">Provide authentication to create key</string>
     <string name="import_error">Import Error, Try re-import again.</string>
     <string name="watch_exists">Wallet %1$s already full wallet - no need to watch</string>
-    <string name="welcome_to_alphawallet">Parallel UPCVerses</string>
+    <string name="welcome_to_alphawallet">Para1:1els</string>
     <string name="lock_seed_phrase">Lock Seed Phrase</string>
     <string name="no_key">No Key found</string>
     <string name="pending_transaction">Pending Transaction ...</string>
