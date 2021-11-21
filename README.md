@@ -7,7 +7,7 @@
 
 # Parallel Universe Hashes:
  ## Para11els allows you to load different environments appropriately Parallels.  A parallel is a custom operating system that can have a custom UI, custom currencies and NFTs all specific to a topic.
- ## In order to access these parallels, Download the [wallet](https://upcunderground.mypinata.cloud/ipfs/QmNvKEfgW695YTZNh6jHnaL7ffAavB9KGAr1Y9TtxMy5oo),
+ ## In order to access these parallels, Download the [wallet](https://upcunderground.mypinata.cloud/ipfs/QmNvKEfgW695YTZNh6jHnaL7ffAavB9KGAr1Y9TtxMy5oo), and go to the 'Protocol' tab.  Select "Set Para1:1els Endpoint" option, and paste the 'Qm.....' word in the 'Address' bar.  Next, you must restart the app and when you click on Protocol, you will be in the parallel universe.
  * Qme5ZzkgBXFchgbXtD2wR85AP5RcbhTHozc9SSmo3GTrkN - IDefineActingBlackOS - Use case: Demonstrate how a Parallel can be used to organize a community of like minded individuals around a common currency and nft
  * QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS     - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
  * QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS        - Use case: Demonstrate how a parallel can be used Free speech using UPC codes for individuals who have been "cancelled". This example uses the same currency as base reality
