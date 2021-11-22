@@ -12,7 +12,7 @@
 # IDefineActingBlackOS
  * Qme5ZzkgBXFchgbXtD2wR85AP5RcbhTHozc9SSmo3GTrkN - IDefineActingBlackOS    - Use case: Demonstrate how a Parallel can be used to organize a community of like minded individuals around a common currency and nft
 # MalcolmsLittleSecretOS
- * QmVfdhsUSmZoGxDytHDMqYxCZovbbzoMY71BYPqXknsuYX - MalcolmsLittleSecretOS  - Use case: Demonstrate how a Parallel can be used to organize a community and share currency with a previously defined community.  MalcolmsLittleSecret and IDefineActingBlackOS are separate NFT platforms that both use TubmanX as the currency.  MalcolmsLittleSecretOS distributes MalcolmsLittleSecret NFT tokens.
+ * QmSm36eXbnS784xKq1BGTZeqUDdo6p2BunmwQUawbokAoW - MalcolmsLittleSecretOS  - Use case: Demonstrate how a Parallel can be used to organize a community and share currency with a previously defined community.  MalcolmsLittleSecret and IDefineActingBlackOS are separate NFT platforms that both use TubmanX as the currency.  MalcolmsLittleSecretOS distributes MalcolmsLittleSecret NFT tokens.
 # ProofOfConceptOS
  * QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS        - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
 # UncancelledOS
