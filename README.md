@@ -9,6 +9,11 @@
   Para11els allows you to load different versions of the the Protocol tab.  These different versions are called  "Parallels".  A parallel is a custom operating system that can have a custom UI, custom currencies and NFTs all specific to a topic.  Parallels are the perfect low cost and permanant way to build a community.  Best of all, Parallels are simply Javascript apps which implement the UPCOS interface, meaning that any developer can define their own Para1:1el protocol and swap it in.  Parallels, among other things, provide a structure for creating your own social network that costs almost zero to deploy and maintain.  If the developer uses our currency and NFT model, then the cost of the parallel is absolutely free due to the open nature of IPFS.  This means that the backend and the GUI are completely decentralized and any person who was previously "cancelled" can make their voice heard!
   In order to access these parallels, Download the [wallet](https://upcunderground.mypinata.cloud/ipfs/QmNvKEfgW695YTZNh6jHnaL7ffAavB9KGAr1Y9TtxMy5oo), and go to the 'Protocol' tab.  Select "Set Para1:1els Endpoint" option, and paste the 'Qm.....' word in the 'Address' bar.  Next, you must restart the app and when you click on Protocol, you will be in the parallel universe.
 
+
+
+
+# HomelessInclusionOS
+ * QmNqumkzp8gPxc1qxoyA3YU5MwYTZ6CJtLqjXpUgmN2ayy   HomelessInclusionOS - Use case: Demonstrate how the homeless can run an NFT economy created from the garbage that they find on the streets.  This economy uses a token called InclusionX.  The desired use case is to give a homeless person some money along with some InclusionX in order to offer the homeless a way to become self sufficient in the NFT economy.  HomelessInclusionOS distributes HomelessNFT tokens.
 # IDefineActingBlackOS
  * Qme5ZzkgBXFchgbXtD2wR85AP5RcbhTHozc9SSmo3GTrkN - IDefineActingBlackOS    - Use case: Demonstrate how a Parallel can be used to organize a community of like minded individuals around a common currency and nft
 # MalcolmsLittleSecretOS
