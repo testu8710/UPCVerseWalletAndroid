@@ -14,7 +14,6 @@
 
 
 
-
 # HomelessInclusionOS
  * QmRYtb1dmQERVxtUYWcwS9RHLvqjYWwJ41Kyg6cARnxuGv - HomelessInclusionOS - Use case: Demonstrate how the homeless can create and thrive in an NFT economy created by scanning UPC codes on garbage that they find in the streets.  This economy uses a token called InclusionX.  The desired use case is to give a homeless person some MATIC along with some InclusionX in order to offer the homeless a way to become self sufficient in the NFT economy.  HomelessInclusionOS distributes HomelessNFT tokens.
 # IDefineActingBlackOS
@@ -25,7 +24,8 @@
  * QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS        - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
 # UncancelledOS
  * QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS           - Use case: Demonstrate how a parallel can be used Free speech using UPC codes for individuals who have been "cancelled". This example uses the same currency as base reality (IntelX) and distributes UPCNFT tokens
-
+# SunriseOS
+ * QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5 - SunriseOS - Use case:  Parallel that was created to show that different OSs can have different avatar (hero) sets than the base parallel.
 
 
 
