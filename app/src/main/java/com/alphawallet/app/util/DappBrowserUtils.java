@@ -88,7 +88,7 @@ public class DappBrowserUtils {
         }
 
         if(finalList.size() < 1) {
-            DApp defaultUPCVerse = new DApp("CURRENT_UPCVERSE","QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5");
+            DApp defaultUPCVerse = new DApp("CURRENT_UPCVERSE","QmRYtb1dmQERVxtUYWcwS9RHLvqjYWwJ41Kyg6cARnxuGv");
             finalList.add(defaultUPCVerse);
         }
         return finalList;
