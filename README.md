@@ -16,7 +16,7 @@
 
 
 
-# HomelessInclusionOS
+# TheHomelessChannel
  * QmRYtb1dmQERVxtUYWcwS9RHLvqjYWwJ41Kyg6cARnxuGv - HomelessInclusionOS - Use case: Demonstrate how the homeless can create and thrive in an NFT economy created by scanning UPC codes on garbage that they find in the streets.  This economy uses a token called InclusionX.  The desired use case is to give a homeless person some MATIC along with some InclusionX in order to offer the homeless a way to become self sufficient in the NFT economy.  HomelessInclusionOS distributes HomelessNFT tokens.
 # IDefineActingBlackOS
  * Qme5ZzkgBXFchgbXtD2wR85AP5RcbhTHozc9SSmo3GTrkN - IDefineActingBlackOS    - Use case: Demonstrate how a Parallel can be used to organize a community of like minded individuals around a common currency and nft
