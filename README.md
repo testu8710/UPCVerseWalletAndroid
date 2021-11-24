@@ -1,7 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlphaWallet/alpha-wallet-android)
 
 
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/parallels_homeless.png
+![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/parallels_homeless_channel_qr.png
 )
 
 ![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/homeless_channel.png
