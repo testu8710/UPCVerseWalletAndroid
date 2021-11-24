@@ -8,10 +8,6 @@
 )
 
 
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/homeless_vet.png
-)
-
-
 # Para1:1els Wallet: Alpha Wallet tailored for UPC Codes (Thank you AlphaWallet!)
 
 # Parallel Universe Hashes:
@@ -32,6 +28,11 @@
  * QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS           - Use case: Demonstrate how a parallel can be used Free speech using UPC codes for individuals who have been "cancelled". This example uses the same currency as base reality (IntelX) and distributes UPCNFT tokens
 # SunriseOS
  * QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5 - SunriseOS - Use case:  Parallel that was created to show that different OSs can have different avatar (hero) sets than the base parallel.
+
+
+
+![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/homeless_vet.png
+)
 
 
 
