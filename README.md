@@ -29,6 +29,11 @@
 # SunriseOS
  * QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5 - SunriseOS - Use case:  Parallel that was created to show that different OSs can have different avatar (hero) sets than the base parallel.
 
+# Parallels News Wallet!  Setting the UPCs ablaze!  Introducing our UPC based decentralized news from a variety of sources (Russell Brand, Joe Rogan)
+
+![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/parallels_news.png
+)
+
 
 ![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/marketplace-view.png
 )
