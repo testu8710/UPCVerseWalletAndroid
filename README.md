@@ -1,224 +1,38 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlphaWallet/alpha-wallet-android)
+Download the UPC Band Radio Android Wallet from IPFS!
+Take back your power, and use decentralized technology
 
+IPFS + POLYGON + UPCs = UNSTOPPABLE transfer of ideas and value!
 
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/parallels_homeless_channel_qr2.png
-)
 
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/homeless_channel.png
-)
 
+Welcome to UPC Band Radio!
+*Mission: Harness the existing UPC Grid Infastructure to provide high value quality entertainment for the vehicle (and home) \n 
+*Each UPC code is a UNIQUE Metaverse server!  {{hack}} it, {{pwn}} it, and then {{upload}} your [[intelligence]]\n 
+*Perfect for TRUCKERS, indie journalists, indie artists, organizations seeking donations,indie actors/acrtesses, and Sovereign individuals who are sick of Big Tech/Corporations snooping around in our data, running our lives and PWNING our data. \n 
+*Get paid on YOUR terms by SELLING YOUR [[intelligence]] as a UPC NFT and accept MATIC DIRECTLY to YOUR UPC code! \n 
+*Every day new UPCs are declared as `coinboxes`.  First x number of users with Leveled Up Scanners can grab free coins from the coinboxes. \n *Every day, the default UPC [[777777777777]] is updated. Check back Often!  This is your Self Owned Shared Crypto News and Intelligence Platform built on a fully decentralized stack (IPFS, POLYGON, UPC Codes) \n 
+*Record a video or take a pic and upload to [["+this.state.account+"]]! \n 
+*Each UPC has a default VR zone.  Just type the `vr` command! * \n 
+*Mirror (xvr) your centralized censroable videos to the UPCs, and upload (xpayload) them for safekeeping \n  
 
-# Para1:1els Wallet: Alpha Wallet tailored for UPC Codes (Thank you AlphaWallet!)
+*Each UPC Code can be bought and sold for around 1 MATIC
 
-# Parallel Universe Hashes:
-  Para11els allows you to load different versions of the the Protocol tab.  These different versions are called  "Parallels".  A parallel is a custom operating system that can have a custom UI, custom currencies and NFTs all specific to a topic.  Parallels are the perfect low cost and permanant way to build a community.  Best of all, Parallels are simply Javascript apps which implement the UPCOS interface, meaning that any developer can define their own Para1:1el protocol and swap it in.  Parallels, among other things, provide a structure for creating your own social network that costs almost zero to deploy and maintain.  If the developer uses our currency and NFT model, then the cost of the parallel is absolutely free due to the open nature of IPFS.  This means that the backend and the GUI are completely decentralized and any person who was previously "cancelled" can make their voice heard!
-  In order to access these parallels, Download the [wallet](https://upcunderground.mypinata.cloud/ipfs/QmNvKEfgW695YTZNh6jHnaL7ffAavB9KGAr1Y9TtxMy5oo), and go to the 'Protocol' tab.  Select "Set Para1:1els Endpoint" option, and paste the 'Qm.....' word in the 'Address' bar.  Next, you must restart the app and when you click on Protocol, you will be in the parallel universe.
+* Initially, 100 Trillion Keyz tokens (0xb1B6415b23a40a75b913faBAA1505503BD49eCf3) were minted. Proof [https://polygonscan.com/token/0xb1B6415b23a40a75b913faBAA1505503BD49eCf3]. Each token provides one unit of utility.  Each Keyz token can be used to tokenize 1 upc code.  
+* When a user tokenizes a UPC code (ie. the user has successfully executed the {{hack}} and {{pwn}} commands on the previously unowned UPC MicroServer that they have scanned), they are the owner of the server.  A server has a front stage, a back stage, and all sorts of metadata inside of it.  The user who owns the UPC code (a UPC Developer!) can program the UPC code, and then easily express the resource as a UPCScript!  One use case is for a homeless person, but any person can be substituted.  The scenerio is that the user found an interesting product package and they want to tokenize the UPC [[766868331174]].  Next, they scan, {{hack}} and {{pwn}} the microserver. they would be able to upload a single video about (possibly) street life or whatever else they desire.  They can then {{flip}} the UPC NFT in our decentralized marketplace, and instantly (as soon as there is a buyer) get  paid!
+*  
+*    Any human with an Anddroid phone can access any UPC server by simply scanning it.  
 
+TERMINAL [[" + this.state.account  +"]]\n Type <i style='color:hotpink'>`help`</i> to see available commands \n  <a href='upc://000000000011'>[[000000000011]]</a> Type <i style='color:hotpink'>`swap`</i> to get some InclusionX\n <a href='upc://000000000012'>[[000000000012]]</a> Type <i style='color:hotpink'>`i`</i> to check the [[intel]] encoded into [["+ this.state.account+"]]  \n  <a href='upc://000000000013'>[[000000000013]]</a> Type <i style='color:hotpink'>`recon`</i> to approve 50 of your InclusionX to be spent. \n <a href='upc://000000000014'>[[000000000014]]</a> Type <i style='color:hotpink'>`hack`</i> to buy the UPC [[" + this.state.account + "]]" + "\n <a href='upc://000000000015'>[[000000000015]]</a> Type <i style='color:hotpink'>`own`</i> to mint if successful with hack [[" + this.state.account + "]]" + "\n  <a href='upc://000000000016'>[[000000000016]]</a> <i style='color:hotpink'>Type `flip` to sell renovated UPC unit [[" + this.state.account + "]]" + " </i> " +  "\n Type <i style='color:hotpink'>`x`</i> view the UNIQUE NFT Creature for this UPC" + " \n Type <i style='color:hotpink'>`clear`</i> to clear screen";
 
 
-# TheHomelessChannel
- * QmRYtb1dmQERVxtUYWcwS9RHLvqjYWwJ41Kyg6cARnxuGv - TheHomelessChannel - Use case: Demonstrate how the homeless can create and thrive in an NFT economy created by scanning UPC codes on garbage that they find in the streets.  This economy uses a token called InclusionX.  The desired use case is to give a homeless person some MATIC along with some InclusionX in order to offer the homeless a way to become self sufficient in the NFT economy.  HomelessInclusionOS distributes HomelessNFT tokens.
-# IDefineActingBlackOS
- * Qme5ZzkgBXFchgbXtD2wR85AP5RcbhTHozc9SSmo3GTrkN - IDefineActingBlackOS    - Use case: Demonstrate how a Parallel can be used to organize a community of like minded individuals around a common currency and nft
-# MalcolmsLittleSecretOS
- * QmZK5LisZsdmBCrpA63biw5VWXqwQQzMnNT2kqPsV2N6zY - MalcolmsLittleSecretOS  - Use case: Demonstrate how a Parallel can be used to organize a community and share currency with a previously defined community.  MalcolmsLittleSecret and IDefineActingBlackOS are separate NFT platforms that both use TubmanX as the currency.  MalcolmsLittleSecretOS distributes MalcolmsLittleSecret NFT tokens.
-# ProofOfConceptOS
- * QmSz9NUpJqnXd2Mn7KGVGHumcSVSBbCdDtmfrCnuB5AGBg - ProofOfConceptOS        - Use case: Demonstrate how one wallet can connect to multiple codebases, smart contracts, or blockchains.
-# UncancelledOS
- * QmPC5YGDyHfLeorgyXfv4gfvEjQH6JB5RL1xns8Qg55CwN - UncancelledOS           - Use case: Demonstrate how a parallel can be used Free speech using UPC codes for individuals who have been "cancelled". This example uses the same currency as base reality (IntelX) and distributes UPCNFT tokens
-# SunriseOS
- * QmaR5PNJ8N47QQyw36WEwoER41ef5ToRdgh8hqoLdi43N5 - SunriseOS - Use case:  Parallel that was created to show that different OSs can have different avatar (hero) sets than the base parallel.
 
-# Parallels News Wallet!  Setting the UPCs ablaze!  Introducing our UPC based decentralized news from a variety of news sources from YouTube and elsewhere
 
-![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/parallels_news.png
-)
 
 
-![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/marketplace-view.png
-)
 
-![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/grep-pac.png
-)
+Browse the internet using UPCs as the URLs.  Scan to the EXACT RESOURCE that you are looking for
+instead of typing in a long url and searching all over the page for what you are looking for!
 
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/screenshot/2pac-hacked-upc.png
-)
+Each UPC Co
 
-![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/rollin-on-upcs.png
-)
-
-![Download](https://github.com/testu8710/UPCVerseWalletAndroid/blob/upc-underground/screenshot/awaiting-command.png
-)
-
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/buy_upc.png
-)
-
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/parallels_intel_dump.png
-)
-
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/nft_market.png
-)
-
-
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/upload_parallels.png
-)
-
-![Download](https://raw.githubusercontent.com/testu8710/UPCVerseWalletAndroid/upc-underground/parallels_vr.png
-)
-
-# AlphaWallet - Advanced, Open Source Ethereum Mobile Wallet & dApp Browser for Android
-
-[![Build Status](https://api.travis-ci.com/AlphaWallet/alpha-wallet-android.svg?branch=master)](https://api.travis-ci.com/AlphaWallet/alpha-wallet-android.svg?branch=master)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg )](https://github.com/AlphaWallet/alpha-wallet-android/graphs/commit-activity)
-![GitHub contributors](https://img.shields.io/github/contributors/AlphaWallet/alpha-wallet-android.svg)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/AlphaWallet/alpha-wallet-android/blob/master/LICENSE)
-[![codecov](https://codecov.io/gh/AlphaWallet/alpha-wallet-android/branch/master/graph/badge.svg)](https://codecov.io/gh/AlphaWallet/alpha-wallet-android)
-
-AlphaWallet is an open source programmable blockchain apps platform. It's compatible with tokenisation framework TokenScript, offering businesses and their users in-depth token interaction, a clean white label user experience and advanced security options. Supports all Ethereum based networks.
-
-AlphaWallet and TokenScript have been used by tokenisation projects like FIFA and UEFA’s [blockchain tickets](https://apps.apple.com/au/app/shankai/id1492559481), Bartercard’s [Qoin ecommerce ecosystem](https://apps.apple.com/au/app/qoin-wallet/id1483718254), several Automobiles’ [car ownership portal](https://github.com/AlphaWallet/TokenScript-Examples/tree/master/examples/Karma) and many more.
-
-⭐ Star us on GitHub — it helps!
-
-[![alphawallet open source wallet android preview](dmz/src/main/resources/static/readme/alphawallet-open-source-ethereum-wallet.jpg)](https://alphawallet.com/)
-<a href='https://play.google.com/store/apps/details?id=io.stormbird.wallet&hl=en&utm_source=github-readme&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get AlphaWallet Open Source Wallet on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="100"/></a>
-
-## About AlphaWallet - Features
-
-Easy to use and secure open source Ethereum wallet for Android and iOS, with native ERC20, ERC721 and ERC875 support. AlphaWallet supports all Ethereum based networks: Ethereum, xDai, Ethereum Classic, Artis, POA, Ropsten, Goerli, Kovan, Rinkeby and Sokol.
-
-- Beginner Friendly
-- Secure Enclave Security
-- Web3 dApp Browser
-- TokenScript Enabled
-- Interact with DeFi, DAO and Games with SmartTokens
-- No hidden fees or tech background needed
-
-### AlphaWallet Is A Token Wallet
-
-AlphaWallet's focus is to provide an interface to interact with Ethereum Tokens in an intuitive, simple and full featured manner. This is what sets us aside from other open source ethereum wallets.
-
-### Select Use Cases
-
-- [Bartercard Qoin](https://play.google.com/store/apps/details?id=com.qoin.wallet&hl=en)
-- [FIFA and UEFA’s blockchain tickets](https://apps.apple.com/au/app/shankai/id1492559481)
-- [Car Ownership portal](https://github.com/AlphaWallet/TokenScript-Examples/tree/master/examples/Karma)
-
-### Full TokenScript Support
-
-With TokenScript, you can extend your Token’s capabilities to become "smart" and secure, enabling a mobile-native user experience :iphone:
-
-“SmartTokens” are traditional fungible and non fungible tokens that are extended with business logic, run natively inside the app and come with signed code to prevent tampering or phishing. It allows you to realise rich functions that Dapps previously struggled to implement. With SmartTokens you can get your token on iOS and Android in real time without the need to build your own ethereum wallet.
-
-AlphaWallet is the “browser” for users to access these SmartTokens. You can get the most out of your use case implementation... without leaving the wallet.
-
-Visit [TokenScript Documentation](https://github.com/AlphaWallet/TokenScript) or see [TokenScript Examples](https://github.com/AlphaWallet/TokenScript-Examples) to learn what you can do with it.
-
-### Philosophy
-
-AlphaWallet is founded by blockchain geeks, business professionals who believe blockchain technology will have a massive impact on the future and change the landscape of technology in general.
-
-We are committed to connecting businesses and consumers with the new digital economic infrastructure through tokenisation. Tokenised rights can be traded on the market and integrated across systems, forming a Frictionless Market and allowing limitless integration with the web.
-
-We want to give businesses the whitelabel tools they need to develop their ethereum wallets, and join the tokenised economy.
-
-# Getting Started
-
-1. [Download](https://developer.android.com/studio/) Android Studio.
-1. Clone this repository
-1. Run `./gradlew build` to install tools and dependencies.
-
-Find more information in our available [documentation](https://github.com/AlphaWallet/alpha-wallet-android/blob/master/docs/overview.md).
-
-### Add your token to AlphaWallet
-
-If you’d like to include TokenScript and extend your token functionalities, please refer to [TokenScript](https://github.com/AlphaWallet/TokenScript).
-
-### Add dApp to the “Discover dApps” section in the browser
-
-Submit a PR to the following file:
-https://github.com/AlphaWallet/alpha-wallet-android/blob/master/app/src/main/assets/dapps_list.json
-
-## How to Contribute
-
-You can submit feedback and report bugs as Github issues. Please be sure to include your operating system, device, version number, and steps to reproduce reported bugs.
-
-### Request or submit a feature :postbox:
-
-Would you like to request a feature? Please get in touch with us [Telegram](https://t.me/AlphaWalletGroup), [Discord](https://discord.gg/mx23YWRTYf), [Twitter](https://twitter.com/AlphaWallet) or through our [community forums](https://community.tokenscript.org/).
-
-If you’d like to contribute code with a Pull Request, please make sure to follow code submission guidelines.
-
-### Spread the word :hatched_chick:
-
-We want to connect businesses and consumers with the new digital economic infrastructure, where everyone can benefit from technology-enabled free markets. Help us spread the word:
-
-<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://github.com/AlphaWallet/alpha-wallet-android"><img src=dmz/src/main/resources/static/readme/share_linkedin-btn.svg height="35" alt="share on linkedin"></a>
-<a href="https://twitter.com/share?url=https://github.com/AlphaWallet/alpha-wallet-android&amp;text=Open%20Source%20Wallet%20for%20Android&amp;hashtags=alphawallet"><img src=dmz/src/main/resources/static/readme/share_tweet-btn.svg height="35" alt="share on twitter"></a>
-<a href="https://t.me/share/url?url=https://github.com/AlphaWallet/alpha-wallet-android&text=Check%20this%20out!"><img src=dmz/src/main/resources/static/readme/share_telegram-btn.svg height="35" alt="share on telegram"></a>
-<a href="mailto:?Subject=open source alphawallet for android&amp;Body=Found%20this%20one,%20check%20it%20out!%20 https://github.com/AlphaWallet/alpha-wallet-android"><img src=dmz/src/main/resources/static/readme/share_mail-btn.svg height="35" alt="send via email"></a>
-<a href="http://reddit.com/submit?url=https://github.com/AlphaWallet/alpha-wallet-android&amp;title=Open%20Source%20AlphaWallet%20for%20Android"><img src=dmz/src/main/resources/static/readme/share_reddit-btn.svg height="35" alt="share on reddit"></a>
-<a href="http://www.facebook.com/sharer.php?u=https://github.com/AlphaWallet/alpha-wallet-android"><img src=dmz/src/main/resources/static/readme/share_facebook-btn.svg height="35" alt="share on facebook"></a>
-
-To learn more about us, please check our Blog or join the conversation:
-- [Blog](https://medium.com/alphawallet)
-- [Telegram](https://t.me/AlphaWalletGroup)
-- [Twitter](https://twitter.com/AlphaWallet)
-- [Facebook](https://www.facebook.com/AlphaWallet)
-- [LinkedIn](https://www.linkedin.com/company/alphawallet/)
-- [Community forum](https://community.tokenscript.org/)
-
-## Contributors
-Thank you to all the contributors! You are awesome.
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://www.alphawallet.com"><img src="https://avatars0.githubusercontent.com/u/16630514?v=4" width="100px;" alt=""/><br /><sub><b>James Sangalli</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=James-Sangalli" title="Code">💻</a></td>
-    <td align="center"><a href="https://alphawallet.com/"><img src="https://avatars2.githubusercontent.com/u/33795543?v=4" width="100px;" alt=""/><br /><sub><b>Victor Zhang</b></sub></a><br /><a href="#ideas-zhangzhongnan928" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="http://hboon.com"><img src="https://avatars2.githubusercontent.com/u/56189?v=4" width="100px;" alt=""/><br /><sub><b>Hwee-Boon Yar</b></sub></a><br /><a href="#ideas-hboon" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/AW-STJ"><img src="https://avatars1.githubusercontent.com/u/61957841?v=4" width="100px;" alt=""/><br /><sub><b>AW-STJ</b></sub></a><br /><a href="#projectManagement-AW-STJ" title="Project Management">📆</a></td>
-    <td align="center"><a href="https://github.com/tomekalphawallet"><img src="https://avatars1.githubusercontent.com/u/51817359?v=4" width="100px;" alt=""/><br /><sub><b>Tomek Nowak</b></sub></a><br /><a href="#design-tomekalphawallet" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/colourful-land"><img src="https://avatars3.githubusercontent.com/u/548435?v=4" width="100px;" alt=""/><br /><sub><b>Weiwu Zhang</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=colourful-land" title="Code">💻</a></td>
-  <td align="center"><a href="https://github.com/JamesSmartCell"><img src="https://avatars2.githubusercontent.com/u/12689544?v=4" width="100px;" alt=""/><br /><sub><b>James Brown</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=JamesSmartCell" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://multisender.app"><img src="https://avatars3.githubusercontent.com/u/9360827?v=4" width="100px;" alt=""/><br /><sub><b>Roman Storm</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/issues?q=author%3Arstormsf" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/justindg"><img src="https://avatars3.githubusercontent.com/u/17334718?v=4" width="100px;" alt=""/><br /><sub><b>justindg</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=justindg" title="Code">💻</a></td>
-    <td align="center"><a href="knowyouralgorithms.wordpress.com"><img src="https://avatars3.githubusercontent.com/u/3628920?v=4" width="100px;" alt=""/><br /><sub><b>Marat Subkhankulov</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=maratsubkhankulov" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/madcake"><img src="https://avatars0.githubusercontent.com/u/133312?v=4" width="100px;" alt=""/><br /><sub><b>Maksim Rasputin</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=madcake" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.lucastoledo.co"><img src="https://avatars3.githubusercontent.com/u/17125002?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Toledo</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=hellolucas" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/farrahfazirah"><img src="https://avatars0.githubusercontent.com/u/20555752?v=4" width="100px;" alt=""/><br /><sub><b>Farrah Fazirah</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=farrahfazirah" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/ChintanRathod"><img src="https://avatars2.githubusercontent.com/u/4371780?v=4" width="100px;" alt=""/><br /><sub><b>Chintan Rathod</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=ChintanRathod" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/lyhistory"><img src="https://avatars0.githubusercontent.com/u/1522513?v=4" width="100px;" alt=""/><br /><sub><b>Liu Yue</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=lyhistory" title="Code">💻</a></td>
-    <td align="center"><a href="http://petergrassberger.com"><img src="https://avatars1.githubusercontent.com/u/666289?v=4" width="100px;" alt=""/><br /><sub><b>Peter Grassberger</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=PeterTheOne" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/daboooooo"><img src="https://avatars3.githubusercontent.com/u/51960472?v=4" width="100px;" alt=""/><br /><sub><b>daboooooo</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=daboooooo" title="Code">💻</a></td>
-    <td align="center"><a href="https://1inch.exchange"><img src="https://avatars2.githubusercontent.com/u/762226?v=4" width="100px;" alt=""/><br /><sub><b>Sergej Kunz</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=deacix" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.bidali.com"><img src="https://avatars3.githubusercontent.com/u/7315?v=4" width="100px;" alt=""/><br /><sub><b>Cory Smith</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=corymsmith" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/corymsmith"><img src="https://avatars3.githubusercontent.com/u/13280244?v=4" width="100px;" alt=""/><br /><sub><b>Corey Caplan</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=coreycaplan3" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/rip32700"><img src="https://avatars1.githubusercontent.com/u/15885971?v=4" width="100px;" alt=""/><br /><sub><b>Philipp Rieger</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=rip32700" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/fuseio"><img src="https://avatars3.githubusercontent.com/u/10231448?v=4" width="100px;" alt=""/><br /><sub><b>Tal Beja</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=bejavu" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/asoong"><img src="https://avatars0.githubusercontent.com/u/3453571?v=4" width="100px;" alt=""/><br /><sub><b>Alex Soong</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=asoong" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/appyhour770"><img src="https://avatars1.githubusercontent.com/u/8951009?v=4" width="100px;" alt=""/><br /><sub><b>BTU Protocol</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=appyhour770" title="Code">💻</a></td>
-    <td align="center"><a href="https://antsankov.com"><img src="https://avatars3.githubusercontent.com/u/2533512?v=4" width="100px;" alt=""/><br /><sub><b>Alex Tsankov</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=antsankov" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/gravitational"><img src="https://avatars2.githubusercontent.com/u/18430731?v=4" width="100px;" alt=""/><br /><sub><b>Anna R</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=annabambi" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/SpiderStore"><img src="https://avatars3.githubusercontent.com/u/20901836?v=4" width="100px;" alt=""/><br /><sub><b>TamirTian</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=TamirTian" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/SpasiboKojima"><img src="https://avatars1.githubusercontent.com/u/34808650?v=4" width="100px;" alt=""/><br /><sub><b>Andrew</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=SpasiboKojima" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/LingTian"><img src="https://avatars1.githubusercontent.com/u/4249432?v=4" width="100px;" alt=""/><br /><sub><b>Ling</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=LingTian" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Destiner"><img src="https://avatars1.githubusercontent.com/u/4247901?v=4" width="100px;" alt=""/><br /><sub><b>Timur Badretdinov</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=Destiner" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-## License
-AlphaWallet Android is available under the [MIT license](https://github.com/AlphaWallet/alpha-wallet-android/blob/master/LICENSE). Free for commercial and non-commercial use.
+https://upcunderground.mypinata.cloud/ipfs/QmcPpRPNSESDGTLYEpbN6bqpWv9j4kpPCHhCuHdBhxrZQe
