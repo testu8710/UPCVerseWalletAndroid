@@ -23,4 +23,4 @@ Welcome to UPC Band Radio!
 
 
 Download the from IPFS wallet here!
-https://upcunderground.mypinata.cloud/ipfs/QmcPpRPNSESDGTLYEpbN6bqpWv9j4kpPCHhCuHdBhxrZQe
+https://upcunderground.mypinata.cloud/ipfs/QmYdvdhzRdiWgeF5X8XrVP36rDaqMzDRMsQXSSVzYiy2tN/UPCBand-Radio-Android-1.01.apk
