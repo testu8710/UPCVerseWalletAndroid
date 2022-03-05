@@ -1,7 +1,15 @@
 Download the UPC Band Radio Android Wallet from IPFS!
 Take back your power, and use decentralized technology
 
+
+The goal of this project is simple.  I needed a place to publish my ideas in an easy to use, censorship resistant manner.  Blockchains already exist, however, writing data to and extracting data from a block explorer in a usable format can be intimidating for a beginning user. (For example, here is the transaction for the instantiation of the coin https://polygonscan.com/token/0xb1B6415b23a40a75b913faBAA1505503BD49eCf3).  In order to write that transction, I needed to use  To ease
+
+
 IPFS + POLYGON + UPCs = UNSTOPPABLE transfer of ideas and value!
+
+
+
+
 
 
 
@@ -29,3 +37,7 @@ Download the from IPFS wallet here!
 https://upcunderground.mypinata.cloud/ipfs/QmYdvdhzRdiWgeF5X8XrVP36rDaqMzDRMsQXSSVzYiy2tN
 
 https://upcunderground.mypinata.cloud/ipfs/QmYdvdhzRdiWgeF5X8XrVP36rDaqMzDRMsQXSSVzYiy2tN/UPCBand-Radio-Android-1.01.apk
+
+
+
+||QmWLwYzWYdxik9e5HgU9qivbtRKv8NTATuJb3kbUN2V9Ec||
