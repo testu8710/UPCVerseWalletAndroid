@@ -34,9 +34,7 @@ There is a DEX built into the wallet.  Users can {{swap}} MATIC for Keyz 1:1 usi
 
 
 Download the from IPFS wallet here!
-https://upcunderground.mypinata.cloud/ipfs/QmYdvdhzRdiWgeF5X8XrVP36rDaqMzDRMsQXSSVzYiy2tN
-
-https://upcunderground.mypinata.cloud/ipfs/QmYdvdhzRdiWgeF5X8XrVP36rDaqMzDRMsQXSSVzYiy2tN/UPCBand-Radio-Android-1.01.apk
+https://upcunderground.mypinata.cloud/ipfs/QmVzhStGdKzM7VDCC9HynkuFeN4LrioPuxdc3URniyDwCR
 
 
 
