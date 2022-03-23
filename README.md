@@ -34,7 +34,7 @@ There is a DEX built into the wallet.  Users can {{swap}} MATIC for Keyz 1:1 usi
 
 
 Download the from IPFS wallet here!
-https://upcunderground.mypinata.cloud/ipfs/QmVzhStGdKzM7VDCC9HynkuFeN4LrioPuxdc3URniyDwCR
+https://upcunderground.mypinata.cloud/ipfs/QmQkFS1XUw6ht27u86QBRcQsAiHo3VDJL44XJNfqgFeWpa
 
 
 
