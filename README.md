@@ -38,3 +38,7 @@ https://upcunderground.mypinata.cloud/ipfs/QmQkFS1XUw6ht27u86QBRcQsAiHo3VDJL44XJ
 
 
 ||QmWLwYzWYdxik9e5HgU9qivbtRKv8NTATuJb3kbUN2V9Ec||
+
+
+
+Notorious NFT - https://upcunderground.mypinata.cloud/ipfs/QmZs8Q5t11RfGx7WbBhkFFTVPWknrMWKj7Aank95z9y9AV
